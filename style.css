@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body {
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    background: #000;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.columns {
+    flex: 33.33%;
+}
+
+.color-orange {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.color-cyan {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.color-dark-cyan {
+    background-color: hsl(179, 100%, 13%);
+}
+
+img {
+    margin: 50px 0 10px 30px;
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    padding: 0 0 20px 30px;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 0 30px 20px 30px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    padding: 20px;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 50px;
+    margin: 40px 50px 40px 30px;
+    cursor: pointer;
+}
+
+.text-orange {
+    color: hsl(31, 77%, 52%);
+}
+
+.text-orange:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.text-cyan {
+    color: hsl(184, 100%, 22%);
+}
+
+.text-cyan:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.text-dark-cyan {
+    color: hsl(179, 100%, 13%);
+}
+
+.text-dark-cyan:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 375px) {
+    .rows {
+        display: block;
+        flex-wrap: nowrap;
+        width: 80%;
+    }
+
+    .columns {
+        flex: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .rows {
+        display: block;
+        flex-wrap: nowrap;
+        width: 80%;
+    }
+
+    .columns {
+        flex: 100%;
+    }
+}
